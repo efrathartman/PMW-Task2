@@ -13,7 +13,7 @@ const Page = ({
   refreshLanguage,
   children,
 }: PageProps) => {
-  // הוספת סטייט לשפה לדוגמה
+ 
   const [language, setLanguage] = useState(initialLanguage);
 
   const handleLanguageChange = (lang: string) => {
@@ -23,7 +23,7 @@ const Page = ({
 
   return (
     <div lang={language} data-mode={initialMode}>
-      {/* אפשר להוסיף כאן כותרת/ניווט לפי הצורך */}
+      
       {children}
     </div>
   );
